@@ -38,6 +38,7 @@ namespace TipCalculator.Core.ViewModels
             {
                 _generosity = value;
                 RaisePropertyChanged(() => Generosity);
+                Recalculate();
             }
         }
         public decimal Tip 
